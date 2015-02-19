@@ -1,5 +1,5 @@
 {
-  "name": "PxLoader",
+  "name": "PxLoader-cors",
   "main": [
 		"PxLoader.js",
 		"PxLoaderImage.js",
