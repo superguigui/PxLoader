@@ -1,11 +1,14 @@
 /*global PxLoader: true, define: true */ 
 
 // PxLoader plugin to load images
-function PxLoaderImage(url, tags, priority) {
+function PxLoaderImage(url, tags, priority, origin) {
     var self = this,
         loader = null;
 
     this.img = new Image();
+    if(origin != undefined) {
+        this.img.crossOrigin = origin;
+    }
     this.tags = tags;
     this.priority = priority;
 
