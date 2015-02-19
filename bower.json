@@ -6,12 +6,12 @@
 		"PxLoaderSound.js",
 		"PxLoaderVideo.js"
 	],
-  "version": "0.0.0",
-  "homepage": "http://thinkpixellab.com/pxloader/",
+  "version": "1.0.0",
+  "homepage": "http://github.com/superguigui/PxLoader/",
   "authors": [
     "Pixel Lab"
   ],
-  "description": "PxLoader is a simple JavasScript library for creating preloaders and resource downloaders for HTML5 apps",
+  "description": "PxLoader fork to deal with CORS",
   "license": "MIT",
   "ignore": [
     "**/.*",
