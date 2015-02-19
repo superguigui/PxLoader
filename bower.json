@@ -6,7 +6,7 @@
 		"PxLoaderSound.js",
 		"PxLoaderVideo.js"
 	],
-  "version": "1.0.0",
+  "version": "1.0.1",
   "homepage": "http://github.com/superguigui/PxLoader/",
   "authors": [
     "Pixel Lab"
