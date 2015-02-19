@@ -528,8 +528,8 @@ function PxLoaderImage(url, tags, priority, origin) {
 }
 
 // add a convenience method to PxLoader for adding an image
-PxLoader.prototype.addImage = function(url, tags, priority) {
-    var imageLoader = new PxLoaderImage(url, tags, priority);
+PxLoader.prototype.addImage = function(url, tags, priority, origin) {
+    var imageLoader = new PxLoaderImage(url, tags, priority, origin);
     this.add(imageLoader);
 
     // return the img element to the caller
