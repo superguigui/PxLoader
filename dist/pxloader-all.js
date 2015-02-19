@@ -1,4 +1,4 @@
-/*! PxLoader v1.0.0 | http://thinkpixellab.com/PxLoader */
+/*! PxLoader v1.0.1 | http://thinkpixellab.com/PxLoader */
 /*global define: true */ 
 
 (function(global) {
@@ -432,14 +432,17 @@ if (!Array.isArray) {
 
 
 
-/*global PxLoader: true, define: true */ 
+/*global PxLoader: true, define: true */
 
 // PxLoader plugin to load images
-function PxLoaderImage(url, tags, priority) {
+function PxLoaderImage(url, tags, priority, origin) {
     var self = this,
         loader = null;
 
     this.img = new Image();
+    if(origin !== undefined) {
+        this.img.crossOrigin = origin;
+    }
     this.tags = tags;
     this.priority = priority;
 
@@ -539,6 +542,7 @@ if (typeof define === 'function' && define.amd) {
         return PxLoaderImage;
     });
 }
+
 /*global PxLoader: true, define: true, soundManager: true */ 
 
 // PxLoader plugin to load sound using SoundManager2

@@ -1,4 +1,4 @@
-/*global PxLoader: true, define: true */ 
+/*global PxLoader: true, define: true */
 
 // PxLoader plugin to load images
 function PxLoaderImage(url, tags, priority, origin) {
@@ -6,7 +6,7 @@ function PxLoaderImage(url, tags, priority, origin) {
         loader = null;
 
     this.img = new Image();
-    if(origin != undefined) {
+    if(origin !== undefined) {
         this.img.crossOrigin = origin;
     }
     this.tags = tags;
